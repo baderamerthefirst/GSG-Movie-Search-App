@@ -4,87 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Search App</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- add all the style reference files here  -->
   </head>
   <body>
-    <!-- Header Section -->
-    <header class="top-bar">
-      <div class="navbar">
-        <!-- Logo -->
-        <div class="logo">
-          <img src="images/imdb-logo.png" alt="IMDb Logo" />
+      <header class="top-bar hero-section">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/netflix.png" alt="netflix Logo" />
+          </div>
+          <ul class="menu" id="menu">
+            <li class="menu-item" id="home">
+              <a href="#home">Home</a>
+            </li>
+            <li class="menu-item" id="myList">
+              <a href="#myList">My List</a>
+            </li>
+          </ul>
+          <div class="search-bar">
+            <input id="search-bar" type="text" placeholder="Search Netflix" />
+            <button id="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
         </div>
-
-        <!-- Menu Butto    add iqon -->
-
-        <div class="menu">
-          <button class="menu-btn">MENU</button>
-        </div>
-        <div class="search-bar">
-          <select class="category-select">
-            <option value="all">All</option>
-            <option value="movies">Movies</option>
-            <option value="tv">TV Shows</option>
-          </select>
-
-          <select id="filter-select">
-            <option value="all">All</option>
-            <!-- <option value="id">ID</option> -->
-            <option value="name">Name</option>
-            <option value="description">Description</option>
-            <option value="date">Release Date</option>
-          </select>
-
-          <input id="search-bar" type="text" placeholder="Search IMDb" />
-          <button id="search-button">
-            <i class="search-icon">&#x1F50D;</i>
-            <!-- Unicode for search icon -->
-          </button>
-        </div>
-        <!-- User Options -->
-        <div class="user-options">
-          <a href="#">Watchlist</a>
-          <a href="#">Sign In</a>
-        </div>
-      </div>
-    </header>
-
-    <!-- Main Content Section -->
+      </header>
+    </div>
     <main class="app-main">
-      <!-- Left Button to Show the Slider -->
       <button id="open-favorites-btn" class="slider-toggle-btn">
         Show Favorites
       </button>
       <button id="close-favorites-btn" class="slider-toggle-btn">
         Hide Favorites
       </button>
-      <!-- Favorites Slider -->
       <div class="favorites-slider" id="favorites-slider">
         <h2>Favorites</h2>
         <div class="favorites-section"></div>
-        <!-- Right Button to Hide the Slider -->
-     
       </div>
-
       <div class="movies-section">
-        <!-- Movie cards will be rendered here -->
       </div>
-
-      <!-- please add more sections here whith a meaningfull class name and use the section class name when stayling to avoid css confusion  -->
-      <!-- please add more sections here  -->
-      <!-- please add more sections here  -->
-      <!-- please add more sections here  -->
-      <!-- please add more sections here  -->
     </main>
-
-    <!-- Footer Section -->
     <footer class="app-footer">
       <p class="app-footer__text">Movie Search App &copy; 2024</p>
     </footer>
-
-    <!-- add all the scrip references  files here  -->
     <script src="./js/script1.js"></script>
   </body>
 </html>
