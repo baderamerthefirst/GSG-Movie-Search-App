@@ -9,354 +9,146 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeFavoritesBtn = document.getElementById("close-favorites-btn");
   const movieSelect = document.getElementById("movie-select");
   const showSelect = document.getElementById("show-select");
-  
+
   const favoritesSection = document.querySelector(".favorites-section");
   // let favoriteMovies = JSON.parse(localStorage.getItem('favoriteMovies')) || []; // Load favorites from localStorage
 
   let moviesArray = [
     {
       id: "m001",
-      name: "Inception",
-      releaseDate: "2010-07-16",
-      avatar: "https://picsum.photos/id/11/400/400",
+      name: "Saving Private Ryan",
+      releaseDate: "1998",
+      avatar: "images/saving-private-ryan.jpg",
       description:
         "A skilled thief is offered a chance to regain his old life as payment for a task considered to be impossible: inception, the implantation of another person's idea into a target's subconscious.",
       duration: "2h 28min",
       actors: "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
       type: true,
-      rating: "8.8",
-      genre: "Sci-Fi",
+      rating: "8.6",
+      genre: "Drama/War",
     },
     {
       id: "m002",
-      name: "The Shawshank Redemption",
-      releaseDate: "1994-09-23",
-      avatar: "https://picsum.photos/id/35/400/400",
+      name: "Dunkirk",
+      releaseDate: "2017",
+      avatar: "images/dunkirk-2017.jpg",
       description:
         "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
       duration: "2h 22min",
       actors: "Tim Robbins, Morgan Freeman, Bob Gunton",
       type: false,
-      rating: "9.3",
-      genre: "Drama",
+      rating: "9.0",
+      genre: "Drama/War",
     },
     {
       id: "m003",
-      name: "The Dark Knight",
-      releaseDate: "2008-07-18",
-      avatar: "https://picsum.photos/id/41/400/400",
+      name: "Schindler’s List",
+      releaseDate: "1993",
+      avatar: "images/Schindler’s List.webp",
       description:
         "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
       duration: "2h 32min",
       actors: "Christian Bale, Heath Ledger, Aaron Eckhart",
       type: true,
-      rating: "9.0",
-      genre: "Action",
+      rating: "8.3",
+      genre: "Drama/War",
     },
     {
       id: "m004",
-      name: "Pulp Fiction",
-      releaseDate: "1994-10-14",
-      avatar: "https://picsum.photos/id/54/400/400",
+      name: "1917",
+      releaseDate: "2019",
+      avatar: "images/1917.jpg",
       description:
         "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
       duration: "2h 34min",
       actors: "John Travolta, Uma Thurman, Samuel L. Jackson",
       type: false,
-      rating: "8.9",
-      genre: "Crime",
+      rating: "8.3",
+      genre: "Drama/War",
     },
     {
       id: "m005",
-      name: "Forrest Gump",
-      releaseDate: "1994-07-06",
-      avatar: "https://picsum.photos/id/63/400/400",
+      name: "Black Hawk Down",
+      releaseDate: "2001",
+      avatar: "images/Black Hawk Down.avif",
       description:
         "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75.",
       duration: "2h 22min",
       actors: "Tom Hanks, Robin Wright, Gary Sinise",
       type: false,
-      rating: "8.8",
-      genre: "Drama",
+      rating: "7.7",
+      genre: "Drama/War",
     },
     {
       id: "m006",
-      name: "The Matrix",
-      releaseDate: "1999-03-31",
-      avatar: "https://picsum.photos/id/75/400/400",
+      name: "The Thin Red Line",
+      releaseDate: "1998",
+      avatar: "images/the thid red line.jpeg",
       description:
         "A computer programmer discovers that reality as he knows it is a simulation created by machines, and joins a rebellion to break free.",
       duration: "2h 16min",
       actors: "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
       type: true,
-      rating: "8.7",
-      genre: "Sci-Fi",
+      rating: "7.6",
+      genre: "Drama/War",
     },
     {
       id: "m007",
-      name: "Goodfellas",
-      releaseDate: "1990-09-19",
-      avatar: "https://picsum.photos/id/82/400/400",
+      name: "Full Metal Jacket",
+      releaseDate: "1987",
+      avatar: "images/Full Metal Jacket.avif",
       description:
         "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito.",
       duration: "2h 26min",
       actors: "Robert De Niro, Ray Liotta, Joe Pesci",
       type: false,
-      rating: "8.7",
-      genre: "Crime",
+      rating: "8.3",
+      genre: "Drama/War",
     },
     {
       id: "m008",
-      name: "Interstellar",
+      name: "Platoon",
       releaseDate: "2014-11-07",
-      avatar: "https://picsum.photos/id/91/400/400",
+      avatar: "images/Platoon.jpg",
       description:
         "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
       duration: "2h 49min",
       actors: "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
       type: true,
-      rating: "8.6",
-      genre: "Sci-Fi",
-    },
-    {
-      id: "m009",
-      name: "Fight Club",
-      releaseDate: "1999-10-15",
-      avatar: "https://picsum.photos/id/103/400/400",
-      description:
-        "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much more.",
-      duration: "2h 19min",
-      actors: "Brad Pitt, Edward Norton, Helena Bonham Carter",
-      type: false,
-      rating: "8.8",
-      genre: "Drama",
-    },
-    {
-      id: "m010",
-      name: "Avatar",
-      releaseDate: "2009-12-18",
-      avatar: "https://picsum.photos/id/112/400/400",
-      description:
-        "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
-      duration: "2h 42min",
-      actors: "Sam Worthington, Zoe Saldana, Sigourney Weaver",
-      type: true,
-      rating: "7.8",
-      genre: "Sci-Fi",
-    },
-    {
-      id: "m011",
-      name: "The Godfather",
-      releaseDate: "1972-03-24",
-      avatar: "https://picsum.photos/id/123/400/400",
-      description:
-        "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-      duration: "2h 55min",
-      actors: "Marlon Brando, Al Pacino, James Caan",
-      type: false,
-      rating: "9.2",
-      genre: "Crime",
-    },
-    {
-      id: "m012",
-      name: "Jurassic Park",
-      releaseDate: "1993-06-11",
-      avatar: "https://picsum.photos/id/137/400/400",
-      description:
-        "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
-      duration: "2h 7min",
-      actors: "Sam Neill, Laura Dern, Jeff Goldblum",
-      type: true,
       rating: "8.1",
-      genre: "Adventure",
-    },
-    {
-      id: "m013",
-      name: "The Silence of the Lambs",
-      releaseDate: "1991-02-14",
-      avatar: "https://picsum.photos/id/142/400/400",
-      description:
-        "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
-      duration: "1h 58min",
-      actors: "Jodie Foster, Anthony Hopkins, Scott Glenn",
-      type: false,
-      rating: "8.6",
-      genre: "Thriller",
-    },
-    {
-      id: "m014",
-      name: "Titanic",
-      releaseDate: "1997-12-19",
-      avatar: "https://picsum.photos/id/154/400/400",
-      description:
-        "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
-      duration: "3h 14min",
-      actors: "Leonardo DiCaprio, Kate Winslet, Billy Zane",
-      type: false,
-      rating: "7.8",
-      genre: "Romance",
-    },
-    {
-      id: "m015",
-      name: "The Avengers",
-      releaseDate: "2012-05-04",
-      avatar: "https://picsum.photos/id/163/400/400",
-      description:
-        "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-      duration: "2h 23min",
-      actors: "Robert Downey Jr., Chris Evans, Scarlett Johansson",
-      type: true,
-      rating: "8.0",
-      genre: "Action",
-    },
-    {
-      id: "m016",
-      name: "The Green Mile",
-      releaseDate: "1999-12-10",
-      avatar: "https://picsum.photos/id/171/400/400",
-      description:
-        "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
-      duration: "3h 9min",
-      actors: "Tom Hanks, Michael Clarke Duncan, David Morse",
-      type: false,
-      rating: "8.6",
-      genre: "Drama",
-    },
-    {
-      id: "m017",
-      name: "Iron Man",
-      releaseDate: "2008-05-02",
-      avatar: "https://picsum.photos/id/183/400/400",
-      description:
-        "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
-      duration: "2h 6min",
-      actors: "Robert Downey Jr., Gwyneth Paltrow, Terrence Howard",
-      type: true,
-      rating: "7.9",
-      genre: "Action",
-    },
-    {
-      id: "m018",
-      name: "Schindler's List",
-      releaseDate: "1993-12-15",
-      avatar: "https://picsum.photos/id/192/400/400",
-      description:
-        "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
-      duration: "3h 15min",
-      actors: "Liam Neeson, Ben Kingsley, Ralph Fiennes",
-      type: false,
-      rating: "8.9",
-      genre: "Biography",
-    },
-    {
-      id: "m019",
-      name: "Gladiator",
-      releaseDate: "2000-05-05",
-      avatar: "https://picsum.photos/id/201/400/400",
-      description:
-        "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-      duration: "2h 35min",
-      actors: "Russell Crowe, Joaquin Phoenix, Connie Nielsen",
-      type: true,
-      rating: "8.5",
-      genre: "Action",
-    },
-    {
-      id: "m020",
-      name: "The Departed",
-      releaseDate: "2006-10-06",
-      avatar: "https://picsum.photos/id/214/400/400",
-      description:
-        "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
-      duration: "2h 31min",
-      actors: "Leonardo DiCaprio, Matt Damon, Jack Nicholson",
-      type: false,
-      rating: "8.5",
-      genre: "Crime",
-    },
-    {
-      id: "m021",
-      name: "The Lion King",
-      releaseDate: "1994-06-24",
-      avatar: "https://picsum.photos/id/223/400/400",
-      description:
-        "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
-      duration: "1h 28min",
-      actors: "Matthew Broderick, Jeremy Irons, James Earl Jones",
-      type: true,
-      rating: "8.5",
-      genre: "Animation",
-    },
-    {
-      id: "m022",
-      name: "Saving Private Ryan",
-      releaseDate: "1998-07-24",
-      avatar: "https://picsum.photos/id/235/400/400",
-      description:
-        "Following the Normandy Landings, a group of U.S. soldiers go behind enemy lines to retrieve a paratrooper whose brothers have been killed in action.",
-      duration: "2h 49min",
-      actors: "Tom Hanks, Matt Damon, Tom Sizemore",
-      type: false,
-      rating: "8.6",
-      genre: "War",
-    },
-    {
-      id: "m023",
-      name: "The Lord of the Rings: The Fellowship of the Ring",
-      releaseDate: "2001-12-19",
-      avatar: "https://picsum.photos/id/241/400/400",
-      description:
-        "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
-      duration: "2h 58min",
-      actors: "Elijah Wood, Ian McKellen, Orlando Bloom",
-      type: true,
-      rating: "8.8",
-      genre: "Fantasy",
-    },
-    {
-      id: "m024",
-      name: "Star Wars: Episode IV - A New Hope",
-      releaseDate: "1977-05-25",
-      avatar: "https://picsum.photos/id/252/400/400",
-      description:
-        "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station.",
-      duration: "2h 1min",
-      actors: "Mark Hamill, Harrison Ford, Carrie Fisher",
-      type: true,
-      rating: "8.6",
-      genre: "Sci-Fi",
+      genre: "Drama/War",
     },
     {
       id: "m025",
       name: "The Usual Suspects",
       releaseDate: "1995-08-16",
-      avatar: "https://picsum.photos/id/261/400/400",
+      avatar: "images/the usual suspects.jpg",
       description:
         "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
       duration: "1h 46min",
       actors: "Kevin Spacey, Gabriel Byrne, Chazz Palminteri",
       type: false,
       rating: "8.5",
-      genre: "Sci-Fi",
+      genre: "Drama/War",
     },
     {
       id: "m026",
       name: "The Pianist",
       releaseDate: "2002-12-04",
-      avatar: "https://picsum.photos/id/270/400/400",
+      avatar: "images/the_pianist.jpg",
       description:
         "A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II.",
       duration: "2h 30min",
       actors: "Adrien Brody, Thomas Kretschmann, Frank Finlay",
       type: false,
       rating: "8.5",
-      genre: "Biography",
+      genre: "Drama/War",
     },
     {
       id: "m027",
       name: "The Dark Knight Rises",
       releaseDate: "2012-07-20",
-      avatar: "https://picsum.photos/id/281/400/400",
+      avatar: "images/The-Dark-Knight-Rises.avif",
       description:
         "Eight years after the Joker's reign of anarchy, Batman must return to defend Gotham City against the enigmatic jewel thief Catwoman and the ruthless mercenary Bane.",
       duration: "2h 44min",
@@ -369,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m028",
       name: "Alien",
       releaseDate: "1979-05-25",
-      avatar: "https://picsum.photos/id/290/400/400",
+      avatar: "images/Platoon.jpg",
       description:
         "The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission.",
       duration: "1h 57min",
@@ -382,7 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m029",
       name: "Back to the Future",
       releaseDate: "1985-07-03",
-      avatar: "https://picsum.photos/id/301/400/400",
+      avatar: "images/Back to the Future.webp",
       description:
         "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown.",
       duration: "1h 56min",
@@ -395,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m030",
       name: "The Prestige",
       releaseDate: "2006-10-20",
-      avatar: "https://picsum.photos/id/312/400/400",
+      avatar: "images/Platoon.jpg",
       description:
         "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
       duration: "2h 10min",
@@ -421,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m032",
       name: "The Terminator",
       releaseDate: "1984-10-26",
-      avatar: "https://picsum.photos/id/330/400/400",
+      avatar: "images/Platoon.jpg",
       description:
         "A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman.",
       duration: "1h 47min",
@@ -664,6 +456,111 @@ document.addEventListener("DOMContentLoaded", () => {
       rating: "8.3",
       genre: "Animation",
     },
+    {
+      id: "m009",
+      name: "Fight Club",
+      releaseDate: "1999-10-15",
+      avatar: "https://picsum.photos/id/103/400/400",
+      description:
+        "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much more.",
+      duration: "2h 19min",
+      actors: "Brad Pitt, Edward Norton, Helena Bonham Carter",
+      type: false,
+      rating: "8.8",
+      genre: "Drama",
+    },
+    {
+      id: "m010",
+      name: "Avatar",
+      releaseDate: "2009-12-18",
+      avatar: "https://picsum.photos/id/112/400/400",
+      description:
+        "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+      duration: "2h 42min",
+      actors: "Sam Worthington, Zoe Saldana, Sigourney Weaver",
+      type: true,
+      rating: "7.8",
+      genre: "Sci-Fi",
+    },
+    {
+      id: "m011",
+      name: "The Godfather",
+      releaseDate: "1972-03-24",
+      avatar: "https://picsum.photos/id/123/400/400",
+      description:
+        "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      duration: "2h 55min",
+      actors: "Marlon Brando, Al Pacino, James Caan",
+      type: false,
+      rating: "9.2",
+      genre: "Crime",
+    },
+    {
+      id: "m012",
+      name: "Jurassic Park",
+      releaseDate: "1993-06-11",
+      avatar: "https://picsum.photos/id/137/400/400",
+      description:
+        "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
+      duration: "2h 7min",
+      actors: "Sam Neill, Laura Dern, Jeff Goldblum",
+      type: true,
+      rating: "8.1",
+      genre: "Adventure",
+    },
+    {
+      id: "m013",
+      name: "The Silence of the Lambs",
+      releaseDate: "1991-02-14",
+      avatar: "https://picsum.photos/id/142/400/400",
+      description:
+        "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
+      duration: "1h 58min",
+      actors: "Jodie Foster, Anthony Hopkins, Scott Glenn",
+      type: false,
+      rating: "8.6",
+      genre: "Thriller",
+    },
+    {
+      id: "m014",
+      name: "Titanic",
+      releaseDate: "1997-12-19",
+      avatar: "https://picsum.photos/id/154/400/400",
+      description:
+        "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+      duration: "3h 14min",
+      actors: "Leonardo DiCaprio, Kate Winslet, Billy Zane",
+      type: false,
+      rating: "7.8",
+      genre: "Romance",
+    },
+    {
+      id: "m015",
+      name: "The Avengers",
+      releaseDate: "2012-05-04",
+      avatar: "https://picsum.photos/id/163/400/400",
+      description:
+        "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+      duration: "2h 23min",
+      actors: "Robert Downey Jr., Chris Evans, Scarlett Johansson",
+      type: true,
+      rating: "8.0",
+      genre: "Action",
+    },
+    {
+      id: "m016",
+      name: "The Green Mile",
+      releaseDate: "1999-12-10",
+      avatar:
+        "https://wallpapercat.com/w/full/d/4/7/58005-3840x2160-desktop-4k-the-green-mile-wallpaper-photo.jpg",
+      description:
+        "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
+      duration: "3h 9min",
+      actors: "Tom Hanks, Michael Clarke Duncan, David Morse",
+      type: false,
+      rating: "8.6",
+      genre: "Drama",
+    },
   ];
   let favoriteMovies = JSON.parse(localStorage.getItem("favoriteMovies")) || []; // Load favorites from localStorage
 
@@ -682,13 +579,11 @@ document.addEventListener("DOMContentLoaded", () => {
     filterMovies();
   });
 
-
-  searchInput.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter') {
+  searchInput.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
       filterMovies(); // Call the search function
     }
-});
-  
+  });
 
   // Function to filter and display movies based on input
   function filterMovies() {
@@ -699,48 +594,42 @@ document.addEventListener("DOMContentLoaded", () => {
     let filteredMovies = moviesArray;
 
     // Filter by category (Movies or TV Shows)
-   
 
     // Apply the search filter based on selected criteria
     if (searchTerm) {
       filteredMovies = filteredMovies.filter((movie) => {
-       
         return (
-          movie.id.toLowerCase().includes(searchTerm)||
+          movie.id.toLowerCase().includes(searchTerm) ||
           movie.name.toLowerCase().includes(searchTerm) ||
           movie.actors.toLowerCase().includes(searchTerm) ||
-          movie.description.toLowerCase().includes(searchTerm) ||
+          // movie.description.toLowerCase().includes(searchTerm) ||
           movie.releaseDate.toLowerCase().includes(searchTerm)
         );
-      
       });
     }
 
     displayMovies(filteredMovies);
   }
   movieSelect.addEventListener("click", () => {
-    categoryFilter(false)
+    categoryFilter(false);
     // console.log(1234);
     // filterMovies();
   });
   showSelect.addEventListener("click", () => {
-    categoryFilter(true)
+    categoryFilter(true);
     // console.log(123);
     // filterMovies();
   });
-function categoryFilter(selectedCategory) {
-  let filteredMovies = moviesArray;
+  function categoryFilter(selectedCategory) {
+    let filteredMovies = moviesArray;
 
-  if (selectedCategory ==false || selectedCategory ==true  ) {
-    
-    filteredMovies = filteredMovies.filter((movie) => {
-      return selectedCategory === movie.type
-        
-    });
+    if (selectedCategory == false || selectedCategory == true) {
+      filteredMovies = filteredMovies.filter((movie) => {
+        return selectedCategory === movie.type;
+      });
+    }
+    displayMovies(filteredMovies);
   }
-  displayMovies(filteredMovies);
-  
-}
   // Function to display the movie cards
   function displayMovies(movies) {
     moviesSection.innerHTML = ""; // Clear the movie section
@@ -784,14 +673,14 @@ function categoryFilter(selectedCategory) {
     genre.textContent = `Genre: ${movie.genre}`;
     card.appendChild(genre);
 
-    const description = document.createElement("p");
-    description.classList.add("movie-description");
-    description.textContent = movie.description;
-    card.appendChild(description);
+    // const description = document.createElement("p");
+    // description.classList.add("movie-description");
+    // description.textContent = movie.description;
+    // card.appendChild(description);
 
     // Add the "Favorite" button
     const favoriteButton = document.createElement("button");
-    favoriteButton.textContent = "Add to Favorites";
+    favoriteButton.innerHTML = `<i class="fa-solid fa-plus"></i>`;
     favoriteButton.classList.add("favorite-button");
     favoriteButton.addEventListener("click", () => {
       addToFavorites(movie);
