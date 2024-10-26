@@ -495,30 +495,30 @@ document.addEventListener("DOMContentLoaded", () => {
       // alert(`${movie.name} is already in your favorites.`);
     }
   }
-  function createFavoriteCard(movie) {
-    const card = document.createElement("div");
-    card.classList.add("favorite-card");
+  // function createFavoriteCard(movie) {
+  //   const card = document.createElement("div");
+  //   card.classList.add("favorite-card");
 
-    const img = document.createElement("img");
-    img.src = `${movie.avatar}?id=${movie.id}`;
-    img.alt = `${movie.name} poster`;
-    card.appendChild(img);
+  //   const img = document.createElement("img");
+  //   img.src = `${movie.avatar}?id=${movie.id}`;
+  //   img.alt = `${movie.name} poster`;
+  //   card.appendChild(img);
 
-    const title = document.createElement("h3");
-    title.classList.add("movie-title");
-    title.textContent = movie.name;
-    card.appendChild(title);
+  //   const title = document.createElement("h3");
+  //   title.classList.add("movie-title");
+  //   title.textContent = movie.name;
+  //   card.appendChild(title);
 
-    const removeButton = document.createElement("button");
-    removeButton.innerHTML = `<i class="fa-solid fa-minus"></i>`;
-    removeButton.classList.add("remove-favorite-button");
-    removeButton.addEventListener("click", () => {
-      removeFromFavorites(movie.id);
-    });
-    card.appendChild(removeButton);
+  //   const removeButton = document.createElement("button");
+  //   removeButton.innerHTML = `<i class="fa-solid fa-minus"></i>`;
+  //   removeButton.classList.add("remove-favorite-button");
+  //   removeButton.addEventListener("click", () => {
+  //     removeFromFavorites(movie.id);
+  //   });
+  //   card.appendChild(removeButton);
 
-    return card;
-  }
+  //   return card;
+  // }
 
   openFavoritesBtn.addEventListener("click", () => {
     favoritesSlider.classList.add("show");
