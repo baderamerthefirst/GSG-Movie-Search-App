@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m002",
       name: "Dunkirk",
       releaseDate: "2017",
-      avatar: "images/dunkirk-2017.jpg",
+      avatar: "images/dunkirk.jpg",
       description:
         "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
       duration: "2h 22min",
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m003",
       name: "Schindler’s List",
       releaseDate: "1993",
-      avatar: "images/Schindler’s List.webp",
+      avatar: "images/Schindler’s List.jpg",
       description:
         "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
       duration: "2h 32min",
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m005",
       name: "Black Hawk Down",
       releaseDate: "2001",
-      avatar: "images/Black Hawk Down.avif",
+      avatar: "images/Black Hawk Down.jpeg",
       description:
         "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75.",
       duration: "2h 22min",
@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m028",
       name: "Alien",
       releaseDate: "1979-05-25",
-      avatar: "images/Platoon.jpg",
+      avatar: "images/Alien.webp",
       description:
         "The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission.",
       duration: "1h 57min",
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m030",
       name: "The Prestige",
       releaseDate: "2006-10-20",
-      avatar: "images/Platoon.jpg",
+      avatar: "images/The Prestige.jpg",
       description:
         "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
       duration: "2h 10min",
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m031",
       name: "Memento",
       releaseDate: "2000-09-05",
-      avatar: "https://picsum.photos/id/321/400/400",
+      avatar: "images/Memento.jpg",
       description:
         "A man with short-term memory loss attempts to track down his wife's murderer.",
       duration: "1h 53min",
@@ -213,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m032",
       name: "The Terminator",
       releaseDate: "1984-10-26",
-      avatar: "images/Platoon.jpg",
+      avatar: "images/The Terminator.jpg",
       description:
         "A human soldier is sent from 2029 to 1984 to stop an almost indestructible cyborg killing machine, sent from the same year, which has been programmed to execute a young woman.",
       duration: "1h 47min",
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m033",
       name: "Die Hard",
       releaseDate: "1988-07-20",
-      avatar: "https://picsum.photos/id/341/400/400",
+      avatar: "images/Die Hard.jpeg",
       description:
         "An NYPD officer tries to save his wife and several others taken hostage by German terrorists during a Christmas party at the Nakatomi Plaza in Los Angeles.",
       duration: "2h 12min",
@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m034",
       name: "The Big Lebowski",
       releaseDate: "1998-03-06",
-      avatar: "https://picsum.photos/id/350/400/400",
+      avatar: "images/The Big Lebowski.jpg",
       description:
         "Jeff 'The Dude' Lebowski, mistaken for a millionaire of the same name, seeks restitution for his ruined rug and enlists his bowling buddies to help get it.",
       duration: "1h 57min",
@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m035",
       name: "Apocalypse Now",
       releaseDate: "1979-08-15",
-      avatar: "https://picsum.photos/id/361/400/400",
+      avatar: "images/Apocalypse Now.jpg",
       description:
         "A U.S. Army officer serving in Vietnam is tasked with assassinating a renegade Special Forces Colonel who sees himself as a god.",
       duration: "2h 27min",
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m036",
       name: "Good Will Hunting",
       releaseDate: "1997-12-05",
-      avatar: "https://picsum.photos/id/370/400/400",
+      avatar: "images/Good Will Hunting.avif",
       description:
         "Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.",
       duration: "2h 6min",
@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m037",
       name: "The Thing",
       releaseDate: "1982-06-25",
-      avatar: "https://picsum.photos/id/381/400/400",
+      avatar: "images/The Thing.avif",
       description:
         "A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims.",
       duration: "1h 49min",
@@ -291,7 +291,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m038",
       name: "Casino",
       releaseDate: "1995-11-22",
-      avatar: "https://picsum.photos/id/390/400/400",
+      avatar: "images/Casino.jpg",
       description:
         "A tale of greed, deception, money, power, and murder occur between two best friends: a mafia enforcer and a casino executive compete against each other over a gambling empire.",
       duration: "2h 58min",
@@ -304,7 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m039",
       name: "The Sixth Sense",
       releaseDate: "1999-08-06",
-      avatar: "https://picsum.photos/id/401/400/400",
+      avatar: "images/The Sixth Sense.webp",
       description:
         "A boy who communicates with spirits seeks the help of a disheartened child psychologist.",
       duration: "1h 47min",
@@ -317,7 +317,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m040",
       name: "Blade Runner",
       releaseDate: "1982-06-25",
-      avatar: "https://picsum.photos/id/410/400/400",
+      avatar: "images/Blade Runner.jpg",
       description:
         "A blade runner must pursue and terminate four replicants who stole a ship in space and have returned to Earth to find their creator.",
       duration: "1h 57min",
@@ -330,7 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
       id: "m041",
       name: "The Bridge on the River Kwai",
       releaseDate: "1957-10-02",
-      avatar: "https://picsum.photos/id/421/400/400",
+      avatar: "images/The Bridge on the River Kwai.avif",
       description:
         "British POWs are forced to build a railway bridge across the river Kwai for their Japanese captors, not knowing that the allied forces are planning to destroy it.",
       duration: "2h 41min",
@@ -338,228 +338,6 @@ document.addEventListener("DOMContentLoaded", () => {
       type: false,
       rating: "8.2",
       genre: "War",
-    },
-    {
-      id: "m042",
-      name: "Indiana Jones and the Raiders of the Lost Ark",
-      releaseDate: "1981-06-12",
-      avatar: "https://picsum.photos/id/430/400/400",
-      description:
-        "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before the Nazis can obtain its awesome powers.",
-      duration: "1h 55min",
-      actors: "Harrison Ford, Karen Allen, Paul Freeman",
-      type: true,
-      rating: "8.4",
-      genre: "Adventure",
-    },
-    {
-      id: "m043",
-      name: "The Breakfast Club",
-      releaseDate: "1985-02-15",
-      avatar: "https://picsum.photos/id/441/400/400",
-      description:
-        "Five high school students meet in Saturday detention and discover how they have a lot more in common than they thought.",
-      duration: "1h 37min",
-      actors: "Emilio Estevez, Judd Nelson, Molly Ringwald",
-      type: false,
-      rating: "7.9",
-      genre: "Drama",
-    },
-    {
-      id: "m044",
-      name: "Aliens",
-      releaseDate: "1986-07-18",
-      avatar: "https://picsum.photos/id/450/400/400",
-      description:
-        "Ellen Ripley is rescued by a deep salvage team after being in hypersleep for 57 years. The moon that the Nostromo visited has been colonized, but contact is lost. This time, colonial marines have impressive firepower, but will that be enough?",
-      duration: "2h 17min",
-      actors: "Sigourney Weaver, Michael Biehn, Carrie Henn",
-      type: true,
-      rating: "8.3",
-      genre: "Action",
-    },
-    {
-      id: "m045",
-      name: "A Beautiful Mind",
-      releaseDate: "2001-12-21",
-      avatar: "https://picsum.photos/id/461/400/400",
-      description:
-        "After John Nash, a brilliant but asocial mathematician, accepts secret work in cryptography, his life takes a turn for the nightmarish.",
-      duration: "2h 15min",
-      actors: "Russell Crowe, Ed Harris, Jennifer Connelly",
-      type: false,
-      rating: "8.2",
-      genre: "Biography",
-    },
-    {
-      id: "m046",
-      name: "Heat",
-      releaseDate: "1995-12-15",
-      avatar: "https://picsum.photos/id/471/400/400",
-      description:
-        "A group of professional bank robbers start to feel the heat from police when they unknowingly leave a clue at their latest heist.",
-      duration: "2h 50min",
-      actors: "Al Pacino, Robert De Niro, Val Kilmer",
-      type: false,
-      rating: "8.2",
-      genre: "Crime",
-    },
-    {
-      id: "m047",
-      name: "The Iron Giant",
-      releaseDate: "1999-08-06",
-      avatar: "https://picsum.photos/id/481/400/400",
-      description:
-        "A young boy befriends a giant robot from outer space that a government agent wants to destroy.",
-      duration: "1h 26min",
-      actors: "Eli Marienthal, Harry Connick Jr., Jennifer Aniston",
-      type: true,
-      rating: "8.1",
-      genre: "Animation",
-    },
-    {
-      id: "m048",
-      name: "Reservoir Dogs",
-      releaseDate: "1992-10-23",
-      avatar: "https://picsum.photos/id/490/400/400",
-      description:
-        "When a simple jewelry heist goes horribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
-      duration: "1h 39min",
-      actors: "Harvey Keitel, Tim Roth, Michael Madsen",
-      type: false,
-      rating: "8.3",
-      genre: "Crime",
-    },
-    {
-      id: "m049",
-      name: "The Princess Bride",
-      releaseDate: "1987-09-25",
-      avatar: "https://picsum.photos/id/501/400/400",
-      description:
-        "While home sick in bed, a young boy's grandfather reads him the story of a farmboy-turned-pirate who encounters numerous obstacles, enemies and allies in his quest to be reunited with his true love.",
-      duration: "1h 38min",
-      actors: "Cary Elwes, Mandy Patinkin, Robin Wright",
-      type: true,
-      rating: "8.1",
-      genre: "Adventure",
-    },
-    {
-      id: "m050",
-      name: "Full Metal Jacket",
-      releaseDate: "1987-07-10",
-      avatar: "https://picsum.photos/id/510/400/400",
-      description:
-        "A pragmatic U.S. Marine observes the dehumanizing effects the Vietnam War has on his fellow recruits from their brutal boot camp training to the bloody street fighting in Hue.",
-      duration: "1h 56min",
-      actors: "Matthew Modine, R. Lee Ermey, Vincent D'Onofrio",
-      type: false,
-      rating: "8.3",
-      genre: "Animation",
-    },
-    {
-      id: "m009",
-      name: "Fight Club",
-      releaseDate: "1999-10-15",
-      avatar: "https://picsum.photos/id/103/400/400",
-      description:
-        "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much more.",
-      duration: "2h 19min",
-      actors: "Brad Pitt, Edward Norton, Helena Bonham Carter",
-      type: false,
-      rating: "8.8",
-      genre: "Drama",
-    },
-    {
-      id: "m010",
-      name: "Avatar",
-      releaseDate: "2009-12-18",
-      avatar: "https://picsum.photos/id/112/400/400",
-      description:
-        "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
-      duration: "2h 42min",
-      actors: "Sam Worthington, Zoe Saldana, Sigourney Weaver",
-      type: true,
-      rating: "7.8",
-      genre: "Sci-Fi",
-    },
-    {
-      id: "m011",
-      name: "The Godfather",
-      releaseDate: "1972-03-24",
-      avatar: "https://picsum.photos/id/123/400/400",
-      description:
-        "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-      duration: "2h 55min",
-      actors: "Marlon Brando, Al Pacino, James Caan",
-      type: false,
-      rating: "9.2",
-      genre: "Crime",
-    },
-    {
-      id: "m012",
-      name: "Jurassic Park",
-      releaseDate: "1993-06-11",
-      avatar: "https://picsum.photos/id/137/400/400",
-      description:
-        "During a preview tour, a theme park suffers a major power breakdown that allows its cloned dinosaur exhibits to run amok.",
-      duration: "2h 7min",
-      actors: "Sam Neill, Laura Dern, Jeff Goldblum",
-      type: true,
-      rating: "8.1",
-      genre: "Adventure",
-    },
-    {
-      id: "m013",
-      name: "The Silence of the Lambs",
-      releaseDate: "1991-02-14",
-      avatar: "https://picsum.photos/id/142/400/400",
-      description:
-        "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
-      duration: "1h 58min",
-      actors: "Jodie Foster, Anthony Hopkins, Scott Glenn",
-      type: false,
-      rating: "8.6",
-      genre: "Thriller",
-    },
-    {
-      id: "m014",
-      name: "Titanic",
-      releaseDate: "1997-12-19",
-      avatar: "https://picsum.photos/id/154/400/400",
-      description:
-        "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
-      duration: "3h 14min",
-      actors: "Leonardo DiCaprio, Kate Winslet, Billy Zane",
-      type: false,
-      rating: "7.8",
-      genre: "Romance",
-    },
-    {
-      id: "m015",
-      name: "The Avengers",
-      releaseDate: "2012-05-04",
-      avatar: "https://picsum.photos/id/163/400/400",
-      description:
-        "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-      duration: "2h 23min",
-      actors: "Robert Downey Jr., Chris Evans, Scarlett Johansson",
-      type: true,
-      rating: "8.0",
-      genre: "Action",
-    },
-    {
-      id: "m016",
-      name: "The Green Mile",
-      releaseDate: "1999-12-10",
-      avatar:
-        "https://wallpapercat.com/w/full/d/4/7/58005-3840x2160-desktop-4k-the-green-mile-wallpaper-photo.jpg",
-      description:
-        "The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift.",
-      duration: "3h 9min",
-      actors: "Tom Hanks, Michael Clarke Duncan, David Morse",
-      type: false,
-      rating: "8.6",
-      genre: "Drama",
     },
   ];
   let favoriteMovies = JSON.parse(localStorage.getItem("favoriteMovies")) || []; // Load favorites from localStorage
@@ -610,16 +388,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     displayMovies(filteredMovies);
   }
-  movieSelect.addEventListener("click", () => {
-    categoryFilter(false);
-    // console.log(1234);
-    // filterMovies();
-  });
-  showSelect.addEventListener("click", () => {
-    categoryFilter(true);
-    // console.log(123);
-    // filterMovies();
-  });
+
+  // movieSelect.addEventListener("click", () => {
+  //   categoryFilter(false);
+  //   // console.log(1234);
+  //   // filterMovies();
+  // });
+
+  // showSelect.addEventListener("click", () => {
+  //   categoryFilter(true);
+  //   // console.log(123);
+  //   // filterMovies();
+  // });
+
   function categoryFilter(selectedCategory) {
     let filteredMovies = moviesArray;
 
@@ -630,6 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     displayMovies(filteredMovies);
   }
+
   // Function to display the movie cards
   function displayMovies(movies) {
     moviesSection.innerHTML = ""; // Clear the movie section
@@ -728,7 +510,7 @@ document.addEventListener("DOMContentLoaded", () => {
     card.appendChild(title);
 
     const removeButton = document.createElement("button");
-    removeButton.textContent = "Remove from Favorites";
+    removeButton.innerHTML = `<i class="fa-solid fa-minus"></i>`;
     removeButton.classList.add("remove-favorite-button");
     removeButton.addEventListener("click", () => {
       removeFromFavorites(movie.id);
@@ -778,7 +560,7 @@ document.addEventListener("DOMContentLoaded", () => {
     card.appendChild(title);
 
     const removeButton = document.createElement("button");
-    removeButton.textContent = "Remove from Favorites";
+    removeButton.innerHTML = `<i class="fa-solid fa-minus"></i>`;
     removeButton.classList.add("remove-favorite-button");
     removeButton.addEventListener("click", () => {
       removeFromFavorites(movie.id);
