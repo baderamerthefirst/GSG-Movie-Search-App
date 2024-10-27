@@ -438,6 +438,16 @@ document.addEventListener("DOMContentLoaded", () => {
     title.textContent = movie.name;
     card.appendChild(title);
 
+
+    // const cardimg = card.querySelector('.movie-img');
+
+    // Add click event listener to the image
+    img.addEventListener("click", () => {
+        localStorage.setItem("selectedMovie", JSON.stringify(movie));
+        // Redirect to the details page
+        window.location.href = "movie-details.html";
+    });
+
     const releaseDate = document.createElement("p");
     releaseDate.classList.add("movie-info");
     releaseDate.textContent = `Release Date: ${new Date(
@@ -462,8 +472,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Add the "Favorite" button
     const favoriteButton = document.createElement("button");
+    const isInFavorite = favoriteMovies.some(
+      (favMovie) => favMovie.id === movie.id  
+    );
+    if (!isInFavorite) {
     favoriteButton.innerHTML = `<i class="fa-solid fa-plus"></i>`;
-    favoriteButton.classList.add("favorite-button");
+  }else {
+    favoriteButton.innerHTML = `<i class="fa-solid fa-minus"></i>`;
+
+    }    favoriteButton.classList.add("favorite-button");
     favoriteButton.addEventListener("click", () => {
       addToFavorites(movie);
     });
@@ -493,7 +510,9 @@ document.addEventListener("DOMContentLoaded", () => {
       displayFavorites(); // Update favorites display
     } else {
       // alert(`${movie.name} is already in your favorites.`);
+      removeFromFavorites(movie.id)
     }
+    displayMovies(moviesArray);
   }
   // function createFavoriteCard(movie) {
   //   const card = document.createElement("div");
