@@ -512,7 +512,8 @@ document.addEventListener("DOMContentLoaded", () => {
       // alert(`${movie.name} is already in your favorites.`);
       removeFromFavorites(movie.id)
     }
-    displayMovies(moviesArray);
+    // displayMovies(moviesArray);
+    filterMovies();
   }
   // function createFavoriteCard(movie) {
   //   const card = document.createElement("div");

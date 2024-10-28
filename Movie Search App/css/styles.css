@@ -35,13 +35,24 @@ header .cover-film-info {
   background-size: cover;
   background-position: center; 
   padding: 5px 10px;
+  position: relative;  
+
 }
 
+.hero-section {
+
+
+}
 .hero-section header nav {
+  
   display: flex;
   align-items: center;
   gap: 2rem;
   font-size: 1.1rem;
+  /* position: fixed;   */
+  /* width: 95vw; */
+  /* position: fixed; */
+  /* background-color: red; */
 }
 
 .hero-section header .logo img {
@@ -132,6 +143,8 @@ header .cover-film-info {
   .hero-section header nav {
     flex-direction: column;
     align-items: flex-start;
+    /* position: sticky; */
+    
   }
 
   .hero-section header .logo img {
@@ -241,7 +254,7 @@ header .cover-film-info {
   /* border: 1px solid #ddd; */
   /* border-radius: 8px; */
   /* padding: 16px; */
-  width: 300px;
+  /* width: 300px; */
   /* margin: 16px; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -265,6 +278,8 @@ header .cover-film-info {
   height: 180px;
   /* border-radius: 8px; */
   margin-bottom: 10px;
+  max-width: 400px;
+
 }
 
 .movies-section .movie-title {
