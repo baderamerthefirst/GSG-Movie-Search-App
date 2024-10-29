@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     favoritesList.innerHTML = ""; // Clear existing content
 
     if (favoriteMovies.length === 0) {
-      favoritesList.innerHTML = "<p>No favorite movies added yet.</p>";
+      favoritesList.innerHTML = `<p style="font-size: 2rem; color:#fff;">No favorite movies added yet.</p>`;
       return;
     }
 

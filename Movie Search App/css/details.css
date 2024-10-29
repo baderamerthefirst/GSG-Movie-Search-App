@@ -91,6 +91,7 @@ nav a:hover {
 .movie-info {
   margin-bottom: 0.8rem;
   color: #cccccc;
+  font-size: 1.4rem;
 }
 
 .movie-info strong {
@@ -101,6 +102,13 @@ nav a:hover {
   margin: 1.5rem 0;
   line-height: 1.8;
   color: #cccccc;
+}
+p.movie-description {
+  font-size: 1.4rem;
+}
+.movie-description strong {
+  font-size: 1.4rem;
+  color: #fff;
 }
 
 /* Footer Styles */
@@ -115,7 +123,7 @@ nav a:hover {
 
 .app-footer__text {
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 1.4rem;
 }
 
 /* Responsive Design */
