@@ -377,7 +377,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (searchTerm) {
       filteredMovies = filteredMovies.filter((movie) => {
         return (
-          movie.id.toLowerCase().includes(searchTerm) ||
+          // movie.id.toLowerCase().includes(searchTerm) ||
           movie.name.toLowerCase().includes(searchTerm) ||
           movie.actors.toLowerCase().includes(searchTerm) ||
           // movie.description.toLowerCase().includes(searchTerm) ||
@@ -388,18 +388,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     displayMovies(filteredMovies);
   }
-
-  // movieSelect.addEventListener("click", () => {
-  //   categoryFilter(false);
-  //   // console.log(1234);
-  //   // filterMovies();
-  // });
-
-  // showSelect.addEventListener("click", () => {
-  //   categoryFilter(true);
-  //   // console.log(123);
-  //   // filterMovies();
-  // });
 
   function categoryFilter(selectedCategory) {
     let filteredMovies = moviesArray;
@@ -438,14 +426,11 @@ document.addEventListener("DOMContentLoaded", () => {
     title.textContent = movie.name;
     card.appendChild(title);
 
-
-    // const cardimg = card.querySelector('.movie-img');
-
     // Add click event listener to the image
     img.addEventListener("click", () => {
-        localStorage.setItem("selectedMovie", JSON.stringify(movie));
-        // Redirect to the details page
-        window.location.href = "movie-details.html";
+      localStorage.setItem("selectedMovie", JSON.stringify(movie));
+      // Redirect to the details page
+      window.location.href = "details.html";
     });
 
     const releaseDate = document.createElement("p");
@@ -465,22 +450,17 @@ document.addEventListener("DOMContentLoaded", () => {
     genre.textContent = `Genre: ${movie.genre}`;
     card.appendChild(genre);
 
-    // const description = document.createElement("p");
-    // description.classList.add("movie-description");
-    // description.textContent = movie.description;
-    // card.appendChild(description);
-
     // Add the "Favorite" button
     const favoriteButton = document.createElement("button");
     const isInFavorite = favoriteMovies.some(
-      (favMovie) => favMovie.id === movie.id  
+      (favMovie) => favMovie.id === movie.id
     );
     if (!isInFavorite) {
-    favoriteButton.innerHTML = `<i class="fa-solid fa-plus"></i>`;
-  }else {
-    favoriteButton.innerHTML = `<i class="fa-solid fa-minus"></i>`;
-
-    }    favoriteButton.classList.add("favorite-button");
+      favoriteButton.innerHTML = `<i class="fa-solid fa-plus"></i>`;
+    } else {
+      favoriteButton.innerHTML = `<i class="fa-solid fa-minus"></i>`;
+    }
+    favoriteButton.classList.add("favorite-button");
     favoriteButton.addEventListener("click", () => {
       addToFavorites(movie);
     });
@@ -510,35 +490,10 @@ document.addEventListener("DOMContentLoaded", () => {
       displayFavorites(); // Update favorites display
     } else {
       // alert(`${movie.name} is already in your favorites.`);
-      removeFromFavorites(movie.id)
+      removeFromFavorites(movie.id);
     }
-    // displayMovies(moviesArray);
-    filterMovies();
+    displayMovies(moviesArray);
   }
-  // function createFavoriteCard(movie) {
-  //   const card = document.createElement("div");
-  //   card.classList.add("favorite-card");
-
-  //   const img = document.createElement("img");
-  //   img.src = `${movie.avatar}?id=${movie.id}`;
-  //   img.alt = `${movie.name} poster`;
-  //   card.appendChild(img);
-
-  //   const title = document.createElement("h3");
-  //   title.classList.add("movie-title");
-  //   title.textContent = movie.name;
-  //   card.appendChild(title);
-
-  //   const removeButton = document.createElement("button");
-  //   removeButton.innerHTML = `<i class="fa-solid fa-minus"></i>`;
-  //   removeButton.classList.add("remove-favorite-button");
-  //   removeButton.addEventListener("click", () => {
-  //     removeFromFavorites(movie.id);
-  //   });
-  //   card.appendChild(removeButton);
-
-  //   return card;
-  // }
 
   openFavoritesBtn.addEventListener("click", () => {
     favoritesSlider.classList.add("show");
@@ -593,8 +548,5 @@ document.addEventListener("DOMContentLoaded", () => {
     favoriteMovies = favoriteMovies.filter((movie) => movie.id !== movieId); // Remove the movie
     localStorage.setItem("favoriteMovies", JSON.stringify(favoriteMovies)); // Update localStorage
     displayFavorites(); // Update favorites display
-    // alert(`Movie removed from favorites.`);
   }
-  // Initial display of favorites on page load
-  // displayFavorites();
 });

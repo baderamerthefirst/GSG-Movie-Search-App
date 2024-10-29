@@ -4,55 +4,24 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
 }
-
+html {
+  font-size: 10px;
+}
 body {
   background-color: #141414;
   color: #333;
-  font-size: 10px;
 }
-
-/* Hero Section Style */
-
-header .cover-film-info {
-  color: white;
-  font-size: 2rem;
-  position: absolute;
-  top: 40%;
-  left: 10%;
-}
-/* .cover-film-info p {
-  font-size: 1rem;
-  width: 500px;
-  opacity: 0.6;
-} */
 
 .hero-section {
-  height: 700px; 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
-    url(../images/Dunkrik.avif);
-  background-size: cover;
-  background-position: center; 
   padding: 5px 10px;
-  position: relative;  
-
 }
 
-.hero-section {
-
-
-}
 .hero-section header nav {
-  
   display: flex;
   align-items: center;
   gap: 2rem;
-  font-size: 1.1rem;
-  /* position: fixed;   */
-  /* width: 95vw; */
-  /* position: fixed; */
-  /* background-color: red; */
+  font-size: 1.4rem;
 }
 
 .hero-section header .logo img {
@@ -61,7 +30,7 @@ header .cover-film-info {
 
 .hero-section header ul {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -74,18 +43,17 @@ header .cover-film-info {
 .hero-section header input {
   background: none;
   border: none;
-  padding: 10px;
-  border-radius: 30px;
-  width: 90%;
-  font-size: 1.2rem;
+  padding: 1rem;
+  font-size: 1.4rem;
 }
 
 .hero-section header input:focus {
   outline: none;
   color: #fff;
 }
+
 ::placeholder {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .hero-section header .search-bar-container {
@@ -95,8 +63,6 @@ header .cover-film-info {
   border-bottom: 1px solid #a2a2a2;
   padding-right: 10px;
   width: 20rem;
-  /* border-radius: 20px; */
-  font-size: 1.2rem;
 }
 
 .hero-section header button.search-button {
@@ -107,10 +73,10 @@ header .cover-film-info {
 .hero-section header button.search-button i {
   color: white;
   opacity: 0.5;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   header .cover-film-info {
     font-size: 1.8rem;
   }
@@ -143,8 +109,6 @@ header .cover-film-info {
   .hero-section header nav {
     flex-direction: column;
     align-items: flex-start;
-    /* position: sticky; */
-    
   }
 
   .hero-section header .logo img {
@@ -218,51 +182,49 @@ header .cover-film-info {
   .hero-section header input {
     font-size: 0.9rem;
   }
-}
+} */
 /* ================================================================== */
 
-.app-main {
+/* .app-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
   width: 100%;
-}
+} */
 
 /* Footer Section */
 .app-footer {
   text-align: center;
-  margin-top: 40px;
-  padding: 10px;
+  margin-top: 1rem;
+  padding: 2rem 0;
   background-color: #000;
   color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .app-footer .app-footer__text {
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .movies-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 4rem;
   justify-content: center; /*Center all children horizontally*/
 }
 
 .movies-section .movie-card {
-  /* border: 1px solid #ddd; */
-  /* border-radius: 8px; */
-  /* padding: 16px; */
-  /* width: 300px; */
-  /* margin: 16px; */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
   text-align: center;
   background-color: #141414;
   color: #fff;
   transition: all 0.3s ease-in-out;
   padding-bottom: 20px;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 .movies-section .movie-card:hover {
   scale: 1.1;
@@ -275,28 +237,25 @@ header .cover-film-info {
 
 .movies-section .movie-card img {
   width: 100%;
-  height: 180px;
-  /* border-radius: 8px; */
-  margin-bottom: 10px;
-  max-width: 400px;
-
+  height: 18rem;
+  margin-bottom: 1rem;
 }
 
 .movies-section .movie-title {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin: 8px 0;
+  margin: 0.8rem 0;
 }
 
 .movies-section .movie-info {
-  font-size: 0.9rem;
-  color: #555;
-  margin: 4px 0;
+  font-size: 1.4rem;
+  color: #a9a9a9;
+  margin: 0.4rem 0;
 }
 .movies-section .movie-description {
   font-size: 0.85rem;
-  color: #666;
-  margin: 8px 0;
+  color: #a9a9a9;
+  margin: 0.8rem 0;
   white-space: nowrap; /* Ensure text stays on one line */
   overflow: hidden; /* Hide text that overflows */
   text-overflow: ellipsis; /* Add "..." when text is cut off */
@@ -307,10 +266,9 @@ header .cover-film-info {
   color: #fff;
   border: 1px solid #fff;
   cursor: pointer;
-  padding: 15px;
+  padding: 1.5rem;
   margin-top: 10px;
-  border-radius: 50%;
-  width: 50px;
+  width: 5rem;
   visibility: hidden;
 }
 
@@ -327,7 +285,6 @@ header .cover-film-info {
   width: 400px;
   height: 100%;
   background-color: #141414;
-  /* box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); */
   padding: 20px;
   overflow-y: auto;
   transition: transform 0.3s ease;
@@ -366,10 +323,7 @@ header .cover-film-info {
 }
 
 #close-favorites-btn {
-  /* rotate: 90deg; */
   display: none;
-  /* top: 20px; */
-
   left: 10px; /* Place this button on the left */
 }
 
